@@ -1,0 +1,2 @@
+Introduza um numero inteiro positivo:
+7 e um numero primo

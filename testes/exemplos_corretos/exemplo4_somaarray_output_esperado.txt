@@ -1,0 +1,2 @@
+Introduza 5 numeros inteiros:
+A soma dos numeros e: 15

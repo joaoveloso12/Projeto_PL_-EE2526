@@ -1,0 +1,2 @@
+Introduza um numero inteiro positivo:
+Fatorial de 5: 120

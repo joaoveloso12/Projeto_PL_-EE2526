@@ -1,0 +1,2 @@
+Introduza uma string binaria:
+O valor inteiro correspondente e: 5
