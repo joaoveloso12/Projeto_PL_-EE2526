@@ -7,17 +7,23 @@ reserved = {
     'begin': 'BEGIN',
     'boolean': 'BOOLEAN_TYPE',
     'div': 'DIV',
+    'downto': 'DOWNTO',
     'do': 'DO',
     'else': 'ELSE',
     'end': 'END',
     'false': 'FALSE',
     'for': 'FOR',
+    'function': 'FUNCTION',
     'if': 'IF',
     'integer': 'INTEGER_TYPE',
     'mod': 'MOD',
+    'not': 'NOT',
     'of': 'OF',
+    'or': 'OR',
+    'procedure': 'PROCEDURE',
     'program' : 'PROGRAM',
     'readln': 'READLN',
+    'string': 'STRING_TYPE',
     'then': 'THEN',
     'to': 'TO',
     'true': 'TRUE',
@@ -40,7 +46,7 @@ tokens = [
     'GE',               # greater or equal ">="
     'LT',               # less than "<"
     'GT',               # greater than ">"
-    'NE'                # not equal "<>"
+    'NE',                # not equal "<>"
     'SEMI',             # semi ";"
     'COLON',            # colon ":"
     'COMMA',            # comma ","
@@ -76,6 +82,7 @@ t_ignore = ' \t'    # ignora espaços e tabs
 # define 3 tipos de comentários
 def t_COMMENT(t):
     r"\{[^}]*\}|\(\*(.|\n)*?\*\)|//.*"
+
     # 1- \{[^}]*\} -> { comentário }
     #       \{ - chaveta abertura
     #       [^}]* - qualquer sequência de caracteres, exceto '}' (0 ou mais vezes)
